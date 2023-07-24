@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/reel.svg">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>MediaPartner</title>
+</head>
+<body>
+    <%- include('partials/navBar.ejs') %>
+    <div class="header">
+        <div class="heading"> Text <span class="coloured">To</span> Speech Converter</div>
+        <div class="des">Convert Any Text File To Speech <span class="coloured">With</span> High Accuracy</div>
+    </div>
+    <div class="main-content">
+        <div class="upload-section">
+            <input type="file" name="inputBox" id="fileInput" accept=".txt">
+            <label for="fileInput" class="upload-btn">Upload TXT File</label>
+            <div class="fileName"></div>
+            <div class="btn-section">
+                <div class="msg">Select The Voice Type</div>
+                <div class="voice-btn">
+                    <div class="sub-voice male">Male</div>
+                    <div class="sub-voice female">Female</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Handcrafted With ❤️ By ShubhamK
+    </div>
+    <script src="../js/axios.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>
